@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0138)http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&cdwCommand=downloadFiles&cdwFileSearch=&cdwFile_filter= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; script-src &#39;self&#39; blob: &#39;unsafe-inline&#39; &#39;nonce-zHfOuo9g9PbnMneWx4CuxH7bZNn2&#39; code.jquery.com www.google-analytics.com www.samsarin.com/project/dagre-d3/latest/dagre-d3.js cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js cdnjs.cloudflare.com/ajax/libs/bowser/1.6.1/bowser.min.js cdnjs.cloudflare.com/ajax/libs/jstree/3.3.4/jstree.min.js login.persona.org/include.js ajax.googleapis.com/ajax maxcdn.bootstrapcdn.com/bootstrap d3js.org/d3.v3.min.js cdn.datatables.net; style-src * &#39;unsafe-inline&#39;; font-src * data:; img-src * data:;">
+
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<title>CIRM Stem Cell Hub Data Browser V0.58</title>
+<link rel="stylesheet" href="./CIRM Stem Cell Hub Data Browser V0.58_files/HGStyle.css" type="text/css">
+<link rel="stylesheet" href="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="./CIRM Stem Cell Hub Data Browser V0.58_files/nice_menu.css" type="text/css">
+<link rel="stylesheet" href="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery.ui.colorPicker.css" type="text/css">
+<noscript><div class='noscript'><div class='noscript-inner'><p><b>JavaScript is disabled in your web browser</b></p><p>You must have JavaScript enabled in your web browser to use the Genome Browser</p></div></div></noscript>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery.plugins.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery-ui.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery.watermark.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/jquery.ui.colorPicker.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/ajax.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/d3pie.min.js"></script>
+<script type="text/javascript" src="./CIRM Stem Cell Hub Data Browser V0.58_files/dagre-d3.js"></script>
+<script src="./CIRM Stem Cell Hub Data Browser V0.58_files/d3.min.js"></script><script src="./CIRM Stem Cell Hub Data Browser V0.58_files/bowser.min.js"></script></head>
+<body class="cdwWebBrowse cgi" cz-shortcut-listen="true">
+<a name="TOP"></a>
+<div id="main-menu-whole">
+    <div id="main-menu"><div id="block-nice_menus-1" class="clear-block block block-nice_menus">
+	<div class="upcorner"></div>
+	<div class="blockbg">
+	<div class="blockcontent">
+	<div class="content">
+
+<ul class="nice-menu nice-menu-down sf-js-enabled" id="nice-menu-1">
+
+<li class="first even" id="home"><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c"><span id="home-link">Home</span></a></li> 
+
+<li class="menuparent" id="browse"><span>Browse</span>
+	<ul style="display: none; visibility: hidden;">
+	<li class="first"><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=browseFiles&amp;cdwFile_filter=">Files</a></li>
+	<li><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=browseTracks">Tracks</a></li>
+	<li><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=browseLabs">Labs</a></li>
+	<li><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=browseDataSets">Data Sets</a></li>
+	<li><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=browseFormats">Formats</a></li>
+	</ul>
+</li>
+<li class="menuparent" id="analysis"><span>Analysis</span>
+	<ul style="display: none; visibility: hidden;">
+	<li class="first"><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=analysisQuery">Query</a></li>
+	<li><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=analysisJointPages">Joint Data Sets</a></li>
+	</ul>
+</li> 	
+<li id="help"><a href="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse?hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;cdwCommand=help">Help</a></li>
+<li id="query"><a href="http://cirm.ucsc.edu/cgi-bin/hgLogin?hgLogin.do.displayLoginPage=1&amp;returnto=%2Fcgi%2Dbin%2FcdwWebBrowse%3FcdwCommand%3DdownloadFiles%26hgsid%3D87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c&amp;hgsid=87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c">Login</a></li>
+
+
+</ul>
+</div>
+		</div>
+	</div>
+	<div class="downcorner"></div>
+
+</div>
+</div><!-- end main-menu -->
+</div><table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+<!-- end main-menu-whole -->
+
+
+<!-- +++++++++++++++++++++ CONTENT TABLES +++++++++++++++++++ -->
+<tbody><tr><td colspan="3">
+<div id="firstSection">      <!--outer table is for border purposes-->
+      <table width="100%" bgcolor="#888888" border="0" cellspacing="0" cellpadding="1"><tbody><tr><td>
+    <table bgcolor="#FFFEE8" width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td>
+     <div class="subheadingBar"><div class="windowSize" id="sectTtl">
+CIRM Stem Cell Hub Data Browser V0.58     </div></div>
+     <table bgcolor="#FFFEE8" width="100%" cellpadding="0"><tbody><tr><th height="10"></th></tr>
+     <tr><td width="10">&nbsp;</td><td>
+
+
+<form action="http://cirm.ucsc.edu/cgi-bin/cdwWebBrowse" method="GET">
+<input type="HIDDEN" name="hgsid" value="87621_gRyDtCaxaJADu4JYPCwJAgfu1F0c">
+<input type="HIDDEN" name="cdwCommand" value="downloadUrls">
+<input type="HIDDEN" name="cdwFileSearch" value="">
+<h4>Data Download Options</h4>
+<b>Number of files:</b> 401<br>
+<b>Total size:</b> 2.9 GB<p>
+<input class="urlListButton" type="radio" name="cdwDownloadName" value="acc" checked="">
+
+Name files by accession, one single directory<br>
+<input class="urlListButton" type="radio" name="cdwDownloadName" value="sub">
+
+Name files as submitted, one single directory<br>
+<input class="scriptButton" type="radio" name="cdwDownloadName" value="subAndDir">
+
+Name files as submitted and put into subdirectories</p><p>
+<input type="submit" name="Submit" id="Submit" value="Submit"></p></form>
+<div id="urlListDoc">
+
+When you click 'submit', a text file with the URLs of the files will get downloaded.
+
+The URLs are valid for one week.<p>
+
+To download the files:
+
+</p><ul>
+
+<li>With Firefox and <a href="https://addons.mozilla.org/en-US/firefox/addon/downthemall/">DownThemAll</a>: Click Tools - DownThemAll! - Manager. Right click - Advanced - Import from file. Right-click - Select All. Right-click - Toogle All
+
+</li><li>With Chrome and <a href="https://chrome.google.com/webstore/detail/tab-save/lkngoeaeclaebmpkgapchgjdbaekacki">TabToSave</a>: Click the T/S icon next to the URL bar, click the edit button at the bottom of the screen and paste the file contents
+
+</li><li>OSX/Linux: With curl and a single thread: <tt>xargs -n1 curl -JO &lt; fileUrls.txt</tt>
+
+</li><li>Linux: With wget and a single thread: <tt>wget --content-disposition -i fileUrls.txt</tt>
+
+</li><li>With wget and 4 threads: <tt>xargs -n 1 -P 4 wget --content-disposition -q &lt; fileUrls.txt</tt>
+
+</li><li>With aria2c, 16 threads and two threads per file: <tt>aria2c -x 16 -s 2 -i fileUrls.txt</tt>
+
+</li></ul>
+
+</div>
+
+<div id="scriptDoc" style="display:none">
+
+When you click 'submit', a shell script that runs curl will get downloaded.
+
+The URLs are valid for one week.<p>
+
+Then, to download the files:
+
+</p><ul>
+
+<li>Linux/OSX: With curl and a single thread: <tt>sh downloadCirm.sh</tt>
+
+</li><li>Linux/OSX: With curl and four threads: <tt>parallel -j4 :::: downloadCirm.sh</tt>
+
+</li></ul>
+
+<div>
+
+
+	</div></div></td><td width="15"></td></tr></tbody></table>
+	</td></tr></tbody></table>
+	</td></tr></tbody></table>
+	
+</div>
+</td></tr></tbody></table>
+
+<script type="text/javascript" nonce="zHfOuo9g9PbnMneWx4CuxH7bZNn2">
+$('.scriptButton').change( function() {$('#urlListDoc').hide(); $('#scriptDoc').show()} );
+$('.urlListButton').change( function() {$('#urlListDoc').show(); $('#scriptDoc').hide()} );
+</script>
+
+</body></html>
